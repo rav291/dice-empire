@@ -1,0 +1,360 @@
+{
+  "hdri": "hdri/env.hdr",
+  "hdriLow": "hdri/env_1k.hdr",
+  "textures": {
+    "wood": {
+      "color": "textures/wood/color.jpg",
+      "normal": "textures/wood/normal.jpg",
+      "rough": "textures/wood/rough.jpg"
+    },
+    "felt": {
+      "color": "textures/felt/color.jpg",
+      "normal": "textures/felt/normal.jpg",
+      "rough": "textures/felt/rough.jpg"
+    },
+    "ground": {
+      "color": "textures/ground/color.jpg",
+      "normal": "textures/ground/normal.jpg",
+      "rough": "textures/ground/rough.jpg"
+    },
+    "metal": {
+      "color": "textures/metal/color.jpg",
+      "normal": "textures/metal/normal.jpg",
+      "rough": "textures/metal/rough.jpg"
+    },
+    "stone": {
+      "color": "textures/stone/color.jpg",
+      "normal": "textures/stone/normal.jpg",
+      "rough": "textures/stone/rough.jpg"
+    },
+    "marble": {
+      "color": "textures/marble/color.jpg",
+      "normal": "textures/marble/normal.jpg",
+      "rough": "textures/marble/rough.jpg"
+    }
+  },
+  "models": {
+    "token": "models/token.glb",
+    "house": "models/house.glb",
+    "hotel": "models/hotel.glb",
+    "decor": [
+      "models/decor/tree_oak.glb",
+      "models/decor/tree_round.glb",
+      "models/decor/tree_detailed.glb",
+      "models/decor/tree_pine.glb",
+      "models/decor/tree_palm.glb",
+      "models/decor/bush.glb",
+      "models/decor/bush_large.glb",
+      "models/decor/rock.glb",
+      "models/decor/flowers.glb",
+      "models/decor/lantern.glb"
+    ],
+    "landmarks": {
+      "sailboat": {
+        "file": "models/landmarks/sailboat.glb",
+        "name": "Regatta Sloop",
+        "scale": 0.265
+      },
+      "ocean_liner": {
+        "file": "models/landmarks/ocean_liner.glb",
+        "name": "Grand Liner",
+        "scale": 0.047
+      },
+      "lighthouse": {
+        "file": "models/landmarks/lighthouse.glb",
+        "name": "Harbor Lighthouse",
+        "scale": 0.196
+      },
+      "fountain": {
+        "file": "models/landmarks/fountain.glb",
+        "name": "Wishing Fountain",
+        "scale": 0.5
+      },
+      "snack_stall": {
+        "file": "models/landmarks/snack_stall.glb",
+        "name": "Snack Shack",
+        "scale": 0.833
+      },
+      "windmill": {
+        "file": "models/landmarks/windmill.glb",
+        "name": "Breezy Windmill",
+        "scale": 0.831
+      },
+      "water_tower": {
+        "file": "models/landmarks/water_tower.glb",
+        "name": "Water Tower",
+        "scale": 0.934
+      },
+      "park_gate": {
+        "file": "models/landmarks/park_gate.glb",
+        "name": "Fun Park Gate",
+        "scale": 0.324
+      },
+      "wind_turbine": {
+        "file": "models/landmarks/wind_turbine.glb",
+        "name": "Wind Turbine",
+        "scale": 0.864
+      },
+      "hero_statue": {
+        "file": "models/landmarks/hero_statue.glb",
+        "name": "Hero Statue",
+        "scale": 1.429
+      },
+      "jolly_galleon": {
+        "file": "models/landmarks/jolly_galleon.glb",
+        "name": "Jolly Galleon",
+        "scale": 0.076
+      },
+      "phantom_ship": {
+        "file": "models/landmarks/phantom_ship.glb",
+        "name": "Phantom Ship",
+        "scale": 0.094
+      },
+      "treasure_chest": {
+        "file": "models/landmarks/treasure_chest.glb",
+        "name": "Treasure Chest",
+        "scale": 0.784
+      },
+      "big_cannon": {
+        "file": "models/landmarks/big_cannon.glb",
+        "name": "Thunder Cannon",
+        "scale": 0.519
+      },
+      "twinkle_tree": {
+        "file": "models/landmarks/twinkle_tree.glb",
+        "name": "Twinkle Tree",
+        "scale": 0.801
+      },
+      "snowman": {
+        "file": "models/landmarks/snowman.glb",
+        "name": "Frosty Pal",
+        "scale": 0.928
+      },
+      "nutcracker": {
+        "file": "models/landmarks/nutcracker.glb",
+        "name": "Toy Soldier",
+        "scale": 1.825
+      },
+      "reindeer": {
+        "file": "models/landmarks/reindeer.glb",
+        "name": "Snowy Reindeer",
+        "scale": 0.934
+      },
+      "steam_train": {
+        "file": "models/landmarks/steam_train.glb",
+        "name": "Steam Express",
+        "scale": 1.493
+      },
+      "sky_spire": {
+        "file": "models/landmarks/sky_spire.glb",
+        "name": "Sky Spire",
+        "scale": 0.694
+      },
+      "glass_tower": {
+        "file": "models/landmarks/glass_tower.glb",
+        "name": "Glass Tower",
+        "scale": 0.49
+      },
+      "bullet_train": {
+        "file": "models/landmarks/bullet_train.glb",
+        "name": "Bullet Express",
+        "scale": 0.357
+      },
+      "fire_engine": {
+        "file": "models/landmarks/fire_engine.glb",
+        "name": "Fire Engine",
+        "scale": 0.294
+      },
+      "golden_cup": {
+        "file": "models/landmarks/golden_cup.glb",
+        "name": "Golden Cup",
+        "scale": 1.757
+      },
+      "star_rocket": {
+        "file": "models/landmarks/star_rocket.glb",
+        "name": "Star Rocket",
+        "scale": 0.513
+      },
+      "flying_saucer": {
+        "file": "models/landmarks/flying_saucer.glb",
+        "name": "Flying Saucer",
+        "scale": 1
+      },
+      "star_dish": {
+        "file": "models/landmarks/star_dish.glb",
+        "name": "Star Dish",
+        "scale": 1.178
+      },
+      "dome_lab": {
+        "file": "models/landmarks/dome_lab.glb",
+        "name": "Moon Base",
+        "scale": 0.306
+      },
+      "space_racer": {
+        "file": "models/landmarks/space_racer.glb",
+        "name": "Comet Racer",
+        "scale": 0.476
+      },
+      "hilltop_castle": {
+        "file": "models/landmarks/hilltop_castle.glb",
+        "name": "Hilltop Castle",
+        "scale": 1
+      },
+      "trebuchet": {
+        "file": "models/landmarks/trebuchet.glb",
+        "name": "Royal Trebuchet",
+        "scale": 0.54
+      },
+      "siege_tower": {
+        "file": "models/landmarks/siege_tower.glb",
+        "name": "Siege Tower",
+        "scale": 0.509
+      },
+      "wizard_spire": {
+        "file": "models/landmarks/wizard_spire.glb",
+        "name": "Wizard Spire",
+        "scale": 0.866
+      },
+      "obelisk": {
+        "file": "models/landmarks/obelisk.glb",
+        "name": "Sun Obelisk",
+        "scale": 1.976
+      },
+      "desert_tomb": {
+        "file": "models/landmarks/desert_tomb.glb",
+        "name": "Desert Tomb",
+        "scale": 0.896
+      },
+      "nomad_tent": {
+        "file": "models/landmarks/nomad_tent.glb",
+        "name": "Nomad Tent",
+        "scale": 1.143
+      }
+    }
+  },
+  "cities": [
+    {
+      "name": "Sunny Shores",
+      "landmarks": [
+        "lighthouse",
+        "sailboat",
+        "ocean_liner",
+        "fountain",
+        "snack_stall"
+      ],
+      "sky": [
+        "#4fc3ff",
+        "#d9f6ff"
+      ],
+      "accent": "#ffb627"
+    },
+    {
+      "name": "Maple Hollow",
+      "landmarks": [
+        "windmill",
+        "water_tower",
+        "park_gate",
+        "wind_turbine",
+        "hero_statue"
+      ],
+      "sky": [
+        "#79c2ff",
+        "#fff0c4"
+      ],
+      "accent": "#ff7a2f"
+    },
+    {
+      "name": "Pirate Cove",
+      "landmarks": [
+        "jolly_galleon",
+        "phantom_ship",
+        "treasure_chest",
+        "big_cannon",
+        "lighthouse"
+      ],
+      "sky": [
+        "#2d8fd8",
+        "#a3eee6"
+      ],
+      "accent": "#e8434f"
+    },
+    {
+      "name": "Frostpeak",
+      "landmarks": [
+        "twinkle_tree",
+        "snowman",
+        "nutcracker",
+        "reindeer",
+        "steam_train"
+      ],
+      "sky": [
+        "#8db6ff",
+        "#f0f7ff"
+      ],
+      "accent": "#38b6ff"
+    },
+    {
+      "name": "Neon Bay",
+      "landmarks": [
+        "sky_spire",
+        "glass_tower",
+        "bullet_train",
+        "fire_engine",
+        "golden_cup"
+      ],
+      "sky": [
+        "#3b2a92",
+        "#ff7ac8"
+      ],
+      "accent": "#ff3fa4"
+    },
+    {
+      "name": "Starport",
+      "landmarks": [
+        "star_rocket",
+        "flying_saucer",
+        "star_dish",
+        "dome_lab",
+        "space_racer"
+      ],
+      "sky": [
+        "#151d52",
+        "#6b4cc6"
+      ],
+      "accent": "#8d5cff"
+    },
+    {
+      "name": "Kingsbridge",
+      "landmarks": [
+        "hilltop_castle",
+        "trebuchet",
+        "siege_tower",
+        "wizard_spire",
+        "hero_statue"
+      ],
+      "sky": [
+        "#6fb1ff",
+        "#e9f3d2"
+      ],
+      "accent": "#3ccf6e"
+    },
+    {
+      "name": "Dune Oasis",
+      "landmarks": [
+        "obelisk",
+        "desert_tomb",
+        "nomad_tent",
+        "golden_cup",
+        "treasure_chest"
+      ],
+      "sky": [
+        "#ffad55",
+        "#ffe9b3"
+      ],
+      "accent": "#ff8a00"
+    }
+  ],
+  "music": [
+    "audio/music_joyfully.ogg"
+  ]
+}

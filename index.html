@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#1a3fa8" />
+    <meta name="color-scheme" content="light" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Dice Empire" />
+    <meta name="description" content="Roll the dice, collect rent, build landmarks and grow your empire, one city at a time." />
+    <title>Dice Empire</title>
+    <link rel="icon" type="image/png" href="/assets/icons/dice.png" />
+    <link rel="apple-touch-icon" href="/assets/icons/dice.png" />
+    <link rel="preload" href="/assets/fonts/LilitaOne-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/Nunito-Variable.woff2" as="font" type="font/woff2" crossorigin />
+    <style>
+      /* critical paint before the CSS bundle lands */
+      html, body { margin: 0; height: 100%; overflow: hidden; }
+      body { background: radial-gradient(120% 80% at 50% 30%, #6fd0ff 0%, #2f8bff 38%, #1a3fa8 72%, #0e2163 100%) #1a3fa8; }
+    </style>
+  </head>
+  <body>
+    <main id="app">
+      <div id="board-host" aria-label="Game board"></div>
+      <div id="hud"></div>
+      <div id="overlay"></div>
+      <div id="fx" aria-hidden="false"></div>
+    </main>
+    <noscript><p style="color:#fff;font:700 18px system-ui;text-align:center;margin-top:40vh">Dice Empire needs JavaScript to play.</p></noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

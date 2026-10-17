@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <title>Dice Empire - screens harness</title>
+    <link rel="icon" type="image/png" href="/assets/icons/dice.png" />
+    <style>
+      html, body { margin: 0; height: 100%; overflow: hidden; }
+      body { background: radial-gradient(120% 80% at 50% 30%, #6fd0ff 0%, #2f8bff 38%, #1a3fa8 72%, #0e2163 100%) #1a3fa8; font-family: system-ui, sans-serif; }
+      #board-host { position: fixed; inset: 0; }
+      #overlay { position: fixed; inset: 0; z-index: 20; pointer-events: none; }
+      #dev { position: fixed; left: 8px; top: 8px; right: 8px; z-index: 10; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+      #dev .btn { font-size: 0.85rem; padding: 0.55em 0.9em; }
+    </style>
+  </head>
+  <body>
+    <div id="board-host"></div>
+    <div id="dev"></div>
+    <div id="overlay"></div>
+    <script type="module" src="/src/ui/screens/dev.ts"></script>
+  </body>
+</html>

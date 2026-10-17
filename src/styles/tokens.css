@@ -1,0 +1,82 @@
+/* Shared design tokens — bright, chunky, glossy "premium casual" look.
+   Fonts are self-hosted in /assets/fonts (Lilita One = display, Nunito = body). */
+@font-face { font-family: 'Lilita One'; src: url('/assets/fonts/LilitaOne-Regular.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Nunito'; src: url('/assets/fonts/Nunito-Variable.woff2') format('woff2'); font-weight: 400 900; font-display: swap; }
+
+:root {
+  --font-display: 'Lilita One', 'Arial Rounded MT Bold', system-ui, sans-serif;
+  --font-body: 'Nunito', system-ui, sans-serif;
+
+  /* surfaces */
+  --panel: #1f3d8f;
+  --panel-hi: #3a6fe0;
+  --panel-lo: #142a66;
+  --panel-edge: #0b1a45;
+  --sheet: #fff7e8;          /* cream card body */
+  --sheet-edge: #e6d3b0;
+  --scrim: rgba(8, 14, 40, 0.62);
+
+  /* actions */
+  --go: #39d353;  --go-hi: #8cff6a;  --go-lo: #149a3a;
+  --blue: #2f8bff; --blue-hi: #7cc4ff; --blue-lo: #1556c9;
+  --orange: #ff9b1f; --orange-hi: #ffd04a; --orange-lo: #d76200;
+  --red: #ff3d4f; --red-hi: #ff8a8a; --red-lo: #b5122a;
+  --purple: #8d4dff; --purple-hi: #c39bff; --purple-lo: #5520c4;
+
+  /* currency */
+  --gold: #ffcc2e; --gold-hi: #fff2a8; --gold-lo: #d98b00;
+
+  --ink: #10204d;
+  --text: #ffffff;
+  --text-dim: #c7d6ff;
+  --stroke: 0 2px 0 rgba(0, 0, 0, 0.35), 0 0 2px rgba(0, 0, 0, 0.6);
+
+  --r-sm: 10px; --r-md: 16px; --r-lg: 24px; --r-pill: 999px;
+  --shadow-pop: 0 6px 0 rgba(0, 0, 0, 0.25), 0 12px 28px rgba(0, 0, 0, 0.35);
+  --ease-pop: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Chunky 3D button: <button class="btn btn-go"> */
+.btn {
+  --c: var(--blue); --c-hi: var(--blue-hi); --c-lo: var(--blue-lo);
+  font: 400 1.1rem/1 var(--font-display);
+  color: var(--text);
+  text-shadow: var(--stroke);
+  letter-spacing: 0.02em;
+  border: 3px solid var(--panel-edge);
+  border-radius: var(--r-md);
+  padding: 0.7em 1.4em;
+  background: linear-gradient(180deg, var(--c-hi) 0%, var(--c) 45%, var(--c-lo) 100%);
+  box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.45), inset 0 -4px 0 rgba(0, 0, 0, 0.18), 0 5px 0 var(--panel-edge);
+  cursor: pointer;
+  transition: transform 0.08s, box-shadow 0.08s, filter 0.15s;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+.btn:hover { filter: brightness(1.07); }
+.btn:active { transform: translateY(4px); box-shadow: inset 0 3px 0 rgba(255,255,255,0.45), inset 0 -2px 0 rgba(0,0,0,0.18), 0 1px 0 var(--panel-edge); }
+.btn:disabled { filter: grayscale(0.85) brightness(0.85); cursor: default; }
+.btn:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.btn-go { --c: var(--go); --c-hi: var(--go-hi); --c-lo: var(--go-lo); }
+.btn-orange { --c: var(--orange); --c-hi: var(--orange-hi); --c-lo: var(--orange-lo); }
+.btn-red { --c: var(--red); --c-hi: var(--red-hi); --c-lo: var(--red-lo); }
+.btn-purple { --c: var(--purple); --c-hi: var(--purple-hi); --c-lo: var(--purple-lo); }
+.btn-gold { --c: var(--gold); --c-hi: var(--gold-hi); --c-lo: var(--gold-lo); color: #5a3300; text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
+
+/* Modal panel: <div class="panel"><div class="panel-title">…</div>…</div> */
+.panel {
+  background: linear-gradient(180deg, var(--panel-hi), var(--panel) 30%, var(--panel-lo));
+  border: 4px solid var(--panel-edge);
+  border-radius: var(--r-lg);
+  box-shadow: inset 0 3px 0 rgba(255, 255, 255, 0.25), var(--shadow-pop);
+  color: var(--text);
+}
+.panel-title { font: 400 1.6rem/1.1 var(--font-display); text-shadow: var(--stroke); text-align: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
